@@ -5,7 +5,7 @@ PawPass is designed for individuals seeking a secure, efficient, and free soluti
 The project was initiated as a personal challenge to create a viable alternative to existing password management solutions, specifically targeting students and individuals who might find the cost of premium password managers prohibitive. As a college student myself, I recognized the need for a tool that could offer robust password management capabilities without the associated costs. PawPass aims to fill this gap, providing users with the ability to generate strong, unique passwords, securely store them, and easily retrieve them as needed, all without any cost.
 
 # Where to Install
-Under the "Releases" tab, you can find the latest release of PawPass. There are 2 different installers: one which is a .exe file, and another which is a .msi file. While these are explicitly for Windows, the .msi file can be used on other operating systems with the use of a program such as Wine.
+Under the "Releases" tab, you can find the latest release of PawPass. There are 2 different installers: one which is a .exe file, and another which is a .msi file. While these are explicitly for Windows, the .msi file can be used on other operating systems with the use of a program such as Wine. [Releases](https://github.com/seth-linares/PawPass/releases/tag/Password-Manager)
 
 
 
