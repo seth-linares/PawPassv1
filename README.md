@@ -2,9 +2,8 @@
 
 PawPass is designed for individuals seeking a secure, efficient, and free solution for managing their passwords. It uniquely combines the power of Rust and Tauri for the backend to ensure maximum security and performance, with a sleek and intuitive interface built using TypeScript and React for the frontend. This blend of technologies not only guarantees a high level of security for stored data but also ensures a seamless user experience across various platforms.
 
-The project was initiated as a personal challenge to create a viable alternative to existing password management solutions, specifically targeting students and individuals who might find the cost of premium password managers prohibitive. As a college student myself, I recognized the need for a tool that could offer robust password management capabilities without the associated costs. PawPass aims to fill this gap, providing users with the ability to generate strong, unique passwords, securely store them, and easily retrieve them as needed, all without any financial burden.
+The project was initiated as a personal challenge to create a viable alternative to existing password management solutions, specifically targeting students and individuals who might find the cost of premium password managers prohibitive. As a college student myself, I recognized the need for a tool that could offer robust password management capabilities without the associated costs. PawPass aims to fill this gap, providing users with the ability to generate strong, unique passwords, securely store them, and easily retrieve them as needed, all without any cost.
 
-Developing PawPass was also an opportunity for me to dive deep into new and exciting technologies. Although I was initially unfamiliar with Rust, Tauri, TypeScript, and React, I was determined to leverage these tools to build a product that I would be proud to use and share. This journey through unfamiliar territory was challenging but immensely rewarding, allowing me to expand my skill set and contribute a meaningful project to the open-source community.
 
 
 # Development Environment
