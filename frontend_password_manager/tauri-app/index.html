@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri + React + TS</title>
+  </head>
+
+  <body>
+    <script>
+      document.addEventListener('contextmenu', event => event.preventDefault());
+
+      function disableMenu() {
+          if (window.location.hostname !== 'tauri.localhost') {
+              return;
+          }
+
+          document.addEventListener('contextmenu', e => {
+              e.preventDefault();
+              return false;
+          }, { capture: true });
+
+          document.addEventListener('selectstart', e => {
+              e.preventDefault();
+              return false;
+          }, { capture: true });
+      }
+
+      disableMenu();
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

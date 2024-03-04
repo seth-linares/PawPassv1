@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "password_manager_backend",
+    "frontend_password_manager/tauri-app/src-tauri",
+]
+resolver = "2"

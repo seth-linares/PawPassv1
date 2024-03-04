@@ -1,0 +1,26 @@
+[package]
+name = "password_manager_backend"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dev-dependencies]
+tempfile = "3.2.0"
+
+
+[dependencies]
+serde = {version = "1.0.197", features = ["derive"]}
+serde_json = "1.0.114"
+rand = "0.8.5"
+aes = "0.8.4"
+pbkdf2 = "0.12.2"
+ring = "0.17.8"
+uuid = {version = "1.7.0", features = ["serde", "v4"]}
+chrono = { version = "0.4.34", features = ["serde"]}
+zeroize = "1.7.0"
+log = "0.4.20"
+tracing = "0.1.40"
+config = "0.14.0"
+hex = "0.4.3"
+tokio = { version = "1.36.0", features = ["full"] }

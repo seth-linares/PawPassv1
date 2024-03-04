@@ -1,0 +1,331 @@
+.logo.vite:hover {
+  filter: drop-shadow(0 0 2em #747bff);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafb);
+}
+
+h1 {
+  color: #cbe0f5 !important;
+  text-align: center;
+}
+
+h2 {
+  color: #6ec0f3 !important;
+  font-Weight: 'normal';
+}
+
+a {
+  color: #047ec9 !important;
+  font-size: large;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #4dd8ff !important;
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Updated to include opacity transition */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+.settings {
+  max-width: 600px; /* Set a maximum width */
+  margin: 0 auto; /* Add auto margins to center the settings */
+  
+}
+
+.settings label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Rest of your CSS... */
+
+.settings input[type="range"],
+.settings input[type="number"] {
+  flex-grow: 1; /* Allow these elements to take up remaining space */
+  margin-left: 10px; /* Add some space to the left */
+}
+
+.settings input[type="checkbox"] {
+  width: auto; /* Override the width for checkbox inputs */
+}
+
+/* Custom checkbox container */
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Add this to move the checkbox to the right */
+  position: relative;
+  padding-right: 35px; /* Change padding-left to padding-right */
+  margin-bottom: 12px;
+  cursor: pointer;
+  user-select: none; /* Prevent text selection */
+}
+
+/* Hide the default checkbox */
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox (hidden when not checked) */
+.checkmark {
+  position: absolute;
+  top: 0;
+  right: 0; /* Change left to right */
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 4px; /* Optional: for rounded corners */
+}
+
+/* On mouse-over, add a grey background color */
+.custom-checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, change the checkmark's color */
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.custom-checkbox .checkmark:after {
+  right: 9px; /* Change left to right */
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+
+
+.github-link {
+  position: fixed;
+  bottom: 5px;
+  right: 15px;
+  text-decoration: none;
+  
+}
+
+/* Newly added rule for the kitty image */
+.kitty-image {
+  opacity: 0; /* Make the image invisible initially */
+  transition: opacity 0.3s ease; /* Smooth transition for the opacity change */
+  
+}
+
+.kitty-image:hover {
+  opacity: 1; /* Make the image fully visible on hover */
+}
+
+@media (min-width: 10px) {
+  .kitty-image {
+      width: 11%;
+      height: auto;
+      margin-top: auto;
+      margin-bottom: 60px;
+  }
+}
+
+@keyframes change-background-color {
+  0%   {background-color: red;}
+  50%  {background-color: yellow;}
+  100% {background-color: blue;}
+}
+
+.my-element {
+  animation-name: change-background-color;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.kitty-container:hover .kitty-image,
+.kitty-container:hover .kitty-text {
+  opacity: 1; /* Make the image and text fully visible on hover */
+}
+
+.kitty-image,
+.kitty-text {
+  opacity: 0; /* Make the image and text invisible initially */
+  transition: opacity 0.3s ease; /* Smooth transition for the opacity change */
+}
+
+.kitty-image {
+  /* other styles */
+  margin-bottom: 5px; /* adjust as needed */
+}
+
+.kitty-text {
+  /* other styles */
+  margin-top: 0px; /* adjust as needed */
+}
+
+.kitty-container {
+  margin-bottom: 50px; /* adjust as needed */
+}
+
+.entry-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #5e626a;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.entry-fields {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Creates five columns, adjust as needed */
+  gap: 10px; /* Adjust space between items */
+}
+
+.entry-field-names, .entry-data {
+  display: contents; /* This makes the container behave like a 'fragment', not affecting the layout */
+}
+
+.entry-field-names p, .entry-data p {
+  font-size: 1em;
+  margin: 0; /* Removes default margin */
+}
+
+.entry-field-names p {
+  font-weight: bold; /* Ensures field names are not bolded */
+  font-size: larger; /* Adjust size as needed */
+  color: #bcd0f5; /* Adjust color as needed */
+
+}
+
+.entry-data p {
+  font-weight: normal; /* Adjust if you want the data to be bold or normal */
+  font-size: large;
+  color: #f0fef9; /* Adjust color for the data, if needed */
+}
+
+.entry-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Adds some space above the buttons */
+  gap: 200px; /* Adjust space between buttons */
+  
+}
+
+.logout-button {
+  position: fixed;
+  top: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  padding: 10px 20px; /* Adjust as needed */
+  background-color: #047ec9; /* Adjust as needed */
+  color: #fff; /* Adjust as needed */
+  border: none; /* Adjust as needed */
+  border-radius: 5px; /* Adjust as needed */
+  cursor: pointer; /* Changes the cursor to a hand when hovering over the button */
+  transition: background-color 0.2s ease; /* Smooth transition for the background color change */
+}
+
+.logout-button:hover {
+  background-color: #4dd8ff; /* Adjust as needed */
+}
+
+/* Override the background color and text color */
+.react-confirm-alert-body {
+  background-color: #3e424a;
+  color: #ffffff;
+  display: flex; /* Add this line */
+  justify-content: center; /* Add this line */
+  align-items: center; /* Add this line */
+  flex-direction: column; /* Add this line */
+}
+
+/* Override the button colors */
+.react-confirm-alert-button-group {
+  display: flex; /* Add this line */
+  justify-content: center; /* Add this line */
+}
+
+.react-confirm-alert-button-group > button {
+  background-color: #f72044;
+  color: #ffffff;
+}
+
+.react-confirm-alert-button-group > button:hover {
+  background-color: #c51636;
+}
+.react-confirm-alert-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+}
+
+
+.password-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 3px; /* Adds some space above the buttons */
+  gap: 200px; /* Adjust space between buttons */
+  
+}
+
+.password-fields label {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the items horizontally */
+  text-align: center; /* Center the text */
+  margin-bottom: 15px;
+}
+
+.password-fields input[type="text"],
+.password-fields textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80%; /* Make the input take up the full width of the parent */
+}
+
+.password-fields input[type="checkbox"] {
+  width: auto; /* Override the width for checkbox inputs */
+}
+
+.password-fields button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.password-fields button:hover {
+  background-color: #45a049;
+}
+
