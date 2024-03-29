@@ -32,7 +32,7 @@ Under the [Releases](https://github.com/seth-linares/PawPass/releases/tag/Passwo
 
 ## Setup
 
-![Setup](Images\setup.png)
+![Setup](Images/setup.png)
 
 - If this is your first time using PawPass, you will be brought to the setup screen. Here, you will be prompted to create a master password. This password will be used to encrypt and decrypt your passwords, so it is important to remember it. After creating your master password, you will be brought to the login screen. Here, you will enter your master password to access your passwords.
 
@@ -40,14 +40,22 @@ Under the [Releases](https://github.com/seth-linares/PawPass/releases/tag/Passwo
 
 ## Login
 
-![Login](Images\login.png)
+![Login](Images/login.png)
 
 
 - If you have already created a master password and have a file saved, you will be brought straight to the login screen. Here, you will enter your master password to access your passwords.
 
+## Change Master Password
+
+![Change Master Password](images/change_master.png)
+
+- If you want to change your master password, you can do so by clicking the "Change Master Password" button. You will be prompted to enter your current master password, and then you can enter your new master password.
+
+- *There is a hidden feature on this page so keep an eye out for it!*
+
 ## Main Screen
 
-![Main Screen](Images\main.png)
+![Main Screen](Images/main.png)
 
 - After logging in, you will be brought to the main screen. Here, you can view all of your passwords, add new passwords, and generate new passwords. 
 
@@ -64,15 +72,25 @@ Under the [Releases](https://github.com/seth-linares/PawPass/releases/tag/Passwo
 
 ## Add New Entry
 
-![Add New Entry](Images\entry_creation.png)
+![Add New Entry](Images/entry_creation.png)
 
 - This is the screen you will be brought to when you click the "Add New" button. Here, you can create a new password entry.
+
+- For password generation, you can click the "Generate Password" button to generate a random password. 
+    - You are given the following options:
+        - **Use Numbers**: Toggles whether to include numbers in the password.
+        - **Minimum Numbers**: The minimum number of numbers to include in the password.
+        - **Use Symbols**: Toggles whether to include symbols in the password (e.g. !@#$%).
+        - **Minimum Symbols**: The minimum number of symbols to include in the password.
+        - **Use Lowercase**: Toggles whether to include lowercase letters in the password.
+        - **Use Uppercase**: Toggles whether to include uppercase letters in the password.
+        - **Password Length**: The length of the password on a slider from 6 to 128 characters (minimum changes based on the other options).
 
 - You will be brought back to this screen when editing an entry, so the fields will be pre-filled with the entry's information.
 
 ## Example Entries
 
-![Example Entries](Images\example_entries.png)
+![Example Entries](Images/example_entries.png)
 
 - Here are some example entries that have been added to the password manager.
 
@@ -83,9 +101,11 @@ Under the [Releases](https://github.com/seth-linares/PawPass/releases/tag/Passwo
     - The **Copy Password** button to copy the password to your clipboard.
     - The **Remove** button to delete the entry.
 
+- You can filter the entries by category using the dropdown menu at the top of the page as is shown in the image. You can also toggle whether to show only favorite entries or all entries.
+
 ## Remove Entry
 
-![Remove Entry](Images\example_delete.png)
+![Remove Entry](Images/example_delete.png)
 
 - If you decide to remove an entry, you will be prompted to confirm your decision. If you click "Yes", the entry will be removed from the password manager.
 
