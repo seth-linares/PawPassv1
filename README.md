@@ -47,7 +47,7 @@ Under the [Releases](https://github.com/seth-linares/PawPass/releases/tag/Passwo
 
 ## Change Master Password
 
-![Change Master Password](images/change_master.png)
+![Change Master Password](images/change_password.png)
 
 - If you want to change your master password, you can do so by clicking the "Change Master Password" button. You will be prompted to enter your current master password, and then you can enter your new master password.
 
