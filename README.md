@@ -12,8 +12,6 @@ Under the [Releases](https://github.com/seth-linares/PawPass/releases/tag/Passwo
 
 ## Installation
 
-- There are 2 different installers: one which is a .exe file, and another which is a .msi file. While these are explicitly for Windows, the .msi file can be used on other operating systems with the use of a program such as Wine.
-
 - After downloading the installer, run it to begin the installation process. You will be prompted to select a location to install PawPass. Once you have selected a location, click "Install" to begin the installation process. 
 
 - Once the installation is complete, you can either have the installer launch PawPass for you or you can launch it yourself.
