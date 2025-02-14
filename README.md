@@ -1,4 +1,4 @@
-# Overview
+# Overview (OLD!!!) 
 
 PawPass is designed for individuals seeking a secure, efficient, and free solution for managing their passwords. It uniquely combines the power of Rust and Tauri for the backend to ensure maximum security and performance, with a sleek and intuitive interface built using TypeScript and React for the frontend. This blend of technologies not only guarantees a high level of security for stored data but also ensures a seamless user experience across various platforms.
 
